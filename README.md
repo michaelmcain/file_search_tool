@@ -5,7 +5,7 @@
 ###Usage
 
 Instaniate the FST with the file (from PWD) and the string you'd like to search for:
-`search = FileSearchTool.new('./test_file.text', 'query')`
+`search = FileSearchTool.new('./test_file.txt', 'query')`
 
 **For 'lazy' matches**, use `lazy_matcher`, which will return a count of partial or complete matches
 
