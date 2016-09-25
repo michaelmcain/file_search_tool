@@ -1,0 +1,7 @@
+This is a test file
+
+This is a file which can be tested in the file search query tool
+
+You will probably find the word "query" in this file when you search it. 
+
+This is still test file.
