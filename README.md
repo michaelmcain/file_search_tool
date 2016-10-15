@@ -1,10 +1,10 @@
-## File Search Tool
-#### The File Search Tool (FST) is a tool to scan a document or a directory looking for lazy or strict matches of a given word.
+# File Search Tool
+### The File Search Tool (FST) is a tool to scan a document or a directory looking for lazy or strict matches of a given word.
 ***
 
 ###Usage
 
-#### To search a file:
+#### _To search a file:_
 
 Instaniate the FST with the file (from PWD) and the string you'd like to search for:
 `search = FileSearchTool.new('./test_file.txt', 'query')`
@@ -13,7 +13,7 @@ Instaniate the FST with the file (from PWD) and the string you'd like to search 
 
 **For strict matches**, use `strict_matcher`, which will return a count of only strict query matches
 
-#### To search a directory:
+#### _To search a directory:_
 
 Instaniate the FST with the file (from PWD) and the string you'd like to search for:
 `dir = DirSearchTool.new('directory')`
