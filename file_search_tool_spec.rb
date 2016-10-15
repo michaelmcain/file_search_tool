@@ -4,7 +4,7 @@ RSpec.describe FileSearchTool do
 
   describe 'Searches file for query matches' do
     let(:directory) { Dir.pwd }
-    let(:file)      { File.new("#{Dir.pwd}/test_file.txt") }
+    let(:file)      { File.new("#{Dir.pwd}/test_dir/test_file.txt") }
     let(:query)     { 'test' }
 
     it 'parses file for lazy matches' do

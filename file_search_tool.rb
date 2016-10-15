@@ -16,7 +16,7 @@ class FileSearchTool
     @file.each do |f|
       count += f.scan(query).count
     end
-    results = "There are #{count} of complete or partial instances of #{query.upcase} in this file"
+    results = "There are #{count} of complete or partial instances of #{query.upcase} in #{File.basename(@file).upcase}"
     @file.rewind
     results
   end
@@ -29,7 +29,7 @@ class FileSearchTool
         count += f.match(/\b"?#{@query}"?\b/i).size
       end
     end
-    results = "There are #{count} of strict instances of #{query.upcase} in this file"
+    results = "There are #{count} of strict instances of #{query.upcase} in #{File.basename(@file)}"
     @file.rewind
     results
   end
