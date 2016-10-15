@@ -13,9 +13,11 @@ Instaniate the FST with the file (from PWD) and the string you'd like to search 
 
 **For strict matches**, use `strict_matcher`, which will return a count of only strict query matches
 
+***
+
 #### _To search a directory:_
 
-Instaniate the FST with the file (from PWD) and the string you'd like to search for:
+Instaniate the FST with the directory you would like to search in:
 `dir = DirSearchTool.new('directory')`
 
 **For 'lazy' matches**, use `dir_lazy_matcher('query')`, which will return lazy search results for each file in the directory.
