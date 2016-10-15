@@ -1,3 +1,5 @@
+require './file_search_tool.rb'
+
 RSpec.describe FileSearchTool do
 
   describe 'Searches file for query matches' do
@@ -16,7 +18,5 @@ RSpec.describe FileSearchTool do
       results = search.strict_matcher
       expect(results).to include('2')
     end
-
   end
-
 end
