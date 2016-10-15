@@ -5,9 +5,9 @@ class FileSearchTool
   attr_reader :file
   attr_accessor :query
 
-  def initialize (file, query)
-    @file = File.new(file)
-    @query = query
+  def initialize (args = {})
+    @file = File.new(args[:file])
+    @query = args[:query]
   end
 
   def lazy_matcher
@@ -32,8 +32,6 @@ class FileSearchTool
     results = "There are #{count} of strict instances of #{query.upcase} in this file"
     @file.rewind
     results
-
-
   end
 
 end

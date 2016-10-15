@@ -1,0 +1,2 @@
+Test Suite
+A test suite is an XML file that defines tests and suites for which the Phoronix Test Suite, or other OpenBenchmarking.org schema-compliant test clients, are able to execute in a defined, pre-configured form. A test suite can be a collection of test profiles with a given set of test options and/or it can also be a collection of other test suites to run, in a fully extensible manner. New test suites can be created by running phoronix-test-suite build-suite or from the Phoromatic web interface.
