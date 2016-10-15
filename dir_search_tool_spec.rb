@@ -16,9 +16,14 @@ RSpec.describe DirSearchTool do
 
     it 'invokes a lazy search FileSearchTool' do
       search.prepare_files
-      result = search.lazy_dir_matcher('test')
-      expect(result).to match(/of complete or partial instances/)
+      result = search.lazy_dir_matcher(query)
+      expect(result.first).to match(/of complete or partial instances/)
+    end
 
+    it 'invokes a strict search FileSearchTool' do
+      search.prepare_files
+      result = search.strict_dir_matcher(query)
+      expect(result.first).to match(/of strict instances of/)
     end
   end
 end
