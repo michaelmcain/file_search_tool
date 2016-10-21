@@ -2,7 +2,7 @@
 ### The File Search Tool (FST) is a tool to scan a document or a directory looking for lazy or strict matches of a given word.
 ***
 
-###Usage
+### Usage
 
 #### _To search a file:_
 
